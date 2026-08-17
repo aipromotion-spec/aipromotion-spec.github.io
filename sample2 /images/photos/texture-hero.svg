@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000">
+  <defs>
+    <filter id="grainHero">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch" result="noise"/>
+      <feColorMatrix in="noise" type="matrix"
+        values="0 0 0 0 0.79
+                0 0 0 0 0.66
+                0 0 0 0 0.38
+                0 0 0 0.05 0"/>
+    </filter>
+  </defs>
+  <rect width="1600" height="1000" fill="#1A1A1A"/>
+  <rect width="1600" height="1000" filter="url(#grainHero)"/>
+  <text x="1560" y="960" font-family="'Cormorant Garamond', Georgia, serif" font-style="italic" font-weight="600" font-size="90"
+        fill="#C9A961" fill-opacity="0.14" text-anchor="end">Since 1999</text>
+  <rect x="40" y="40" width="1520" height="920" fill="none" stroke="#C9A961" stroke-width="1" stroke-opacity="0.55"/>
+</svg>
